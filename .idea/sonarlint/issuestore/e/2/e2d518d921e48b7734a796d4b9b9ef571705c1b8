@@ -1,0 +1,15 @@
+
+f
+java:S1301)"KReplace this "switch" statement by "if" statements to increase readability.(„—û¤ıÿÿÿÿ
+u
+java:S1149K"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(œ¤ĞÀ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(İå„èıÿÿÿÿ
+\
+java:S3457$"AFormat specifiers should be used instead of string concatenation.(¬Ùç‡øÿÿÿÿ
+\
+java:S3457%"AFormat specifiers should be used instead of string concatenation.(á·Ùûÿÿÿÿÿ
+N
+java:S1068"3Remove this unused "HANDLED_REQUEST" private field.(Èİ·Éúÿÿÿÿ
+A
+java:S1068"+Remove this unused "payload" private field.(Åâæ

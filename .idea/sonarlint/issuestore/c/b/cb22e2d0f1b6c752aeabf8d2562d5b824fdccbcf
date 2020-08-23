@@ -1,0 +1,27 @@
+
+]
+java:S1192"GDefine a constant instead of duplicating this literal "Privet" 4 times.(ºÊ××
+T
+java:S4973	"9Use the "equals" method if value comparison was intended.(ãÜ¸ùÿÿÿÿ
+V
+java:S1854
+";Remove this useless assignment to local variable "string3".(‹–ÁÀùÿÿÿÿ
+V
+java:S1854";Remove this useless assignment to local variable "string2".(’Ö’µüÿÿÿÿ
+Q
+java:S1854";Remove this useless assignment to local variable "string1".(ºÊ××
+6
+java:S2129" Remove this "String" constructor(ºÊ××
+N	java:S106"9Replace this use of System.out or System.err by a logger.(´Ø¾
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Òœæƒ
+S	java:S106	"9Replace this use of System.out or System.err by a logger.(ãÜ¸ùÿÿÿÿ
+;
+java:S2129
+" Remove this "String" constructor(‹–ÁÀùÿÿÿÿ
+B
+java:S1481",Remove this unused "string1" local variable.(ºÊ××
+G
+java:S1481",Remove this unused "string2" local variable.(’Ö’µüÿÿÿÿ
+G
+java:S1481
+",Remove this unused "string3" local variable.(‹–ÁÀùÿÿÿÿ

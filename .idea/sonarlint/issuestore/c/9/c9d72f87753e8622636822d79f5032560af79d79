@@ -1,0 +1,20 @@
+
+u
+java:S1104"ZMake messageHistory a static final constant or non-public and provide accessors if needed.(Å×Ş¾üÿÿÿÿ
+l
+java:S1104
+"VMake serverList a static final constant or non-public and provide accessors if needed.(øÏüá
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¥«Öü
+3
+java:S2386
+"Make this member "protected".(øÏüá
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+O
+java:S1444"4Make this "public static messageHistory" field final(Å×Ş¾üÿÿÿÿ
+F
+java:S1444
+"0Make this "public static serverList" field final(øÏüá
+Œ
+java:S1319
+"vThe type of the "serverList" object should be an interface such as "List" rather than the implementation "LinkedList".(øÏüá

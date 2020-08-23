@@ -1,0 +1,10 @@
+
+M	java:S106I"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+C
+java:S1068"(Remove this unused "addr" private field.(§Å¾ıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÔÊÂüÿÿÿÿ
+=	java:S108.")Either remove or fill this block of code.(”ã‰G
+=	java:S108:")Either remove or fill this block of code.(”ã‰G
+C
+java:S1068"(Remove this unused "port" private field.(ß³†ÿÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(¤ß¿›ùÿÿÿÿ
