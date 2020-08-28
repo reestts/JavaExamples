@@ -1,9 +1,8 @@
 package com.reestts.generics;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Main {
+public class MainGenerics {
     public static void main(String[] args) {
         /*Info<String> infoString = new Info<>("Interstate");
         Info<Integer> infoInteger = new Info<>(60);

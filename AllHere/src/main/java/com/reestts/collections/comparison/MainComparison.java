@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Main {
+public class MainComparison {
     public static void main(String[] args) {
         //default sort
         List<String> listOfString = new ArrayList<>();

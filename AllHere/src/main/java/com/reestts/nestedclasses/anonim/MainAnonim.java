@@ -1,6 +1,6 @@
 package com.reestts.nestedclasses.anonim;
 
-public class Main {
+public class MainAnonim {
     public static void main(String[] args) {
         Math math = new Math() {
             @Override

@@ -8,9 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
-import static com.reestts.streamapi.util.StreamAPIUtil.*;
-
-public class Main {
+public class MainStreamApi {
     public static void main(String[] args) {
         //List<Specialist> specialists = OldApproachUtil.getSpecialists();
         List<Specialist> specialists = StreamAPIUtil.getSpecialists();

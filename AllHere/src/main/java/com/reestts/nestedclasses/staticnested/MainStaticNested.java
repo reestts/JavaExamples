@@ -1,6 +1,6 @@
 package com.reestts.nestedclasses.staticnested;
 
-public class Main {
+public class MainStaticNested {
     public static void main(String[] args) {
         Car.Engine engine = new Car.Engine(120); // object of static nested class
         Car car = new Car("black", 5, engine);

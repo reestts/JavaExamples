@@ -1,6 +1,6 @@
 package com.reestts.stringpool;
 
-public class Main {      //How many String-objects were created?
+public class MainStringPool {      //How many String-objects were created?
     public static void main(String[] args) {
         String string1 = new String("Privet");      // +1 object
         String string2 = "Privet";                          // +1 object
