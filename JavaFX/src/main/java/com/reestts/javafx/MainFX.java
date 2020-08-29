@@ -47,7 +47,7 @@ public class MainFX extends Application {
 /*
 VM Options:
 --module-path
-"D:\Google Drive\Study\Java\JavaFX SDK 11.0.2\lib"
+"path to JavaFX\lib"
 --add-modules
 javafx.media
 */

@@ -11,12 +11,8 @@ public class RemoveIf {
         list.add(3);
         list.add(4);
         list.add(5);
-
-        // without predicate
+        System.out.println(list);
         list.removeIf(element -> element % 2 == 0);
-
-        // with predicate
-        //Predicate<Integer> predicate = element -> element % 2 == 0;
-        //list.removeIf(predicate);
+        System.out.println(list);
     }
 }
