@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>AllHere</module>
+        <module>Core</module>
         <module>Hibernate</module>
         <module>JavaFX</module>
         <module>JDBC</module>
