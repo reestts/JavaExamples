@@ -1,13 +1,0 @@
-
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Á­åÀ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(¿Àäî8áÀ®äÀ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ÉÖ¡åÀ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ÖœåÄ8ÉÖ¡åÀ.
-Z	java:S106+"9Replace this use of System.out or System.err by a logger.(ë¦ıšøÿÿÿÿ8ë•‰æÀ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(€ÒÚøÿÿÿÿ8áÀ®äÀ.
-k
-java:S1192"NDefine a constant instead of duplicating this literal " - after sort" 3 times.(¿Àäî8ë•‰æÀ.
-q
-java:S1192"ODefine a constant instead of duplicating this literal " - before sort" 3 times.(€ÒÚøÿÿÿÿ8ë•‰æÀ.
-Z	java:S106-"9Replace this use of System.out or System.err by a logger.(ºÑäÈüÿÿÿÿ8ë•‰æÀ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÀÚ§æûÿÿÿÿ8¿èåÀ.

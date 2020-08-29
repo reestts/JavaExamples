@@ -1,6 +1,0 @@
-
-s
-java:S3457"Q%n should be used in place of \n to produce the platform-specific line separator.(Æ»°·úÿÿÿÿ8¤ýð‰Ã.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Æ»°·úÿÿÿÿ8¤ýð‰Ã.
-s
-java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(Æ»°·úÿÿÿÿ8¤ýð‰Ã.
