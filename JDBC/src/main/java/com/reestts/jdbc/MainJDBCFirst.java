@@ -7,7 +7,7 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class Main {
+public class MainJDBCFirst {
 
     private static final String URL = "jdbc:mysql://localhost:3306/myjdbc?autoReconnect=true&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static final String USERNAME = "root";

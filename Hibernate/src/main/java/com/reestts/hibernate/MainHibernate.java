@@ -5,7 +5,7 @@ import org.hibernate.query.Query;
 
 import java.util.List;
 
-public class Main {
+public class MainHibernate {
     public static void main(String[] args) {
         try (Session session = HibernateUtil.getSession()) {
             session.beginTransaction();

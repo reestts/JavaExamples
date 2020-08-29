@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 
-public class Main extends Application {
+public class MainFX extends Application {
     public static void main(String[] args) {
         launch(args);
     }
@@ -43,3 +43,11 @@ public class Main extends Application {
         mediaPlayer.play();
     }
 }
+
+/*
+VM Options:
+--module-path
+"D:\Google Drive\Study\Java\JavaFX SDK 11.0.2\lib"
+--add-modules
+javafx.media
+*/

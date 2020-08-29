@@ -4,7 +4,7 @@ import com.mysql.fabric.jdbc.FabricMySQLDriver;
 
 import java.sql.*;
 
-public class Main3 {
+public class MainJDBCThird {
 
     private static final String URL = "jdbc:mysql://localhost:3306/?autoReconnect=true&useSSL=false&myjdbc?useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static final String USERNAME = "root";
