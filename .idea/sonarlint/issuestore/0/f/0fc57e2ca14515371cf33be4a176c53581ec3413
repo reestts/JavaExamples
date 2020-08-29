@@ -1,0 +1,5 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ç‡œÈ8¯™à‰Ã.
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(ƒš˜Æüÿÿÿÿ8¯™à‰Ã.
+t
+java:S4276"WRefactor this code to use the more specialised Functional Interface 'IntBinaryOperator'(öÔžÞ8·¯à‰Ã.
