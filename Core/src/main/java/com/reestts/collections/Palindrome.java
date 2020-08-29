@@ -1,6 +1,8 @@
 package com.reestts.collections;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 
 public class Palindrome {
     public static void main(String[] args) {

@@ -2,7 +2,6 @@ package com.reestts.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class RemoveIf {
     public static void main(String[] args) {
