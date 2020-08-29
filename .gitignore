@@ -1,1 +1,7 @@
-".idea"
+.idea
+/AllHere/target
+/Hibernate/target
+/JavaFX/target
+/JDBC/target
+/Spring/target
+/WebServer/target
