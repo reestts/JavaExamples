@@ -1,8 +1,8 @@
-package com.reestts.streamapi;
+package com.reestts.streamapi.anystreams;
 
-import com.reestts.streamapi.model.Specialist;
-import com.reestts.streamapi.model.Specialty;
-import com.reestts.streamapi.util.StreamAPIUtil;
+import com.reestts.streamapi.anystreams.model.Specialist;
+import com.reestts.streamapi.anystreams.model.Specialty;
+import com.reestts.streamapi.anystreams.util.StreamAPIUtil;
 
 import java.math.BigDecimal;
 import java.util.List;

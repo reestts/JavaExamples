@@ -1,4 +1,4 @@
-package com.reestts.streamapi.model;
+package com.reestts.streamapi.anystreams.model;
 
 import java.math.BigDecimal;
 
