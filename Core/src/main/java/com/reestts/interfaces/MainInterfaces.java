@@ -7,12 +7,12 @@ public class MainInterfaces implements Test {
 
     }
 
-    public static void main(String[] args) {
-        Test.method3();
-    }
-
     @Override
     public void method2() {
 
+    }
+
+    public static void main(String[] args) {
+        Test.method3();
     }
 }

@@ -2,13 +2,13 @@ package com.reestts.interfaces;
 
 public interface Test {
 
-    static void method3() {
-        System.out.println("Hello from method 3");
-    }
+    void method1();
 
     default void method2() {
 
     }
 
-    void method1();
+    static void method3() {
+        System.out.println("Hello from method 3");
+    }
 }
