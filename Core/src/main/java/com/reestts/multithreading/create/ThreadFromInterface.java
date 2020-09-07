@@ -1,4 +1,4 @@
-package com.reestts.multithreading;
+package com.reestts.multithreading.create;
 
 public class ThreadFromInterface implements Runnable {
     @Override

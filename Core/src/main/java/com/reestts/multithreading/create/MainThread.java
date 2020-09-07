@@ -1,4 +1,4 @@
-package com.reestts.multithreading;
+package com.reestts.multithreading.create;
 
 public class MainThread {
     public static void main(String[] args) {
