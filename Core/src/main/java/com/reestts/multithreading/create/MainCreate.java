@@ -1,6 +1,6 @@
 package com.reestts.multithreading.create;
 
-public class MainThread {
+public class MainCreate {
     public static void main(String[] args) {
         ThreadFromClass threadFromClass = new ThreadFromClass();
         threadFromClass.start();
