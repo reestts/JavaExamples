@@ -30,6 +30,6 @@ public class Week {
     }
 
     public static void main(String[] args) {
-        days(1);
+        days(2);
     }
 }
