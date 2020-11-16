@@ -11,7 +11,7 @@
 
         <property name="com.reestts.hibernate.hbm2ddl.auto">update</property>
 
-        <mapping class="com.reestts.com.reestts.hibernate.Employee"/>
+        <mapping class="com.reestts.hibernate.Employee"/>
 
     </session-factory>
 </hibernate-configuration>
