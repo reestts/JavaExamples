@@ -7,20 +7,18 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean id="myCat"
-          class="com.reestts.spring.introduction.Cat">
-    </bean>
+    <context:property-placeholder location="classpath:test.properties"/>
 
-    <bean id="myDog"
-          class="com.reestts.spring.introduction.Dog">
+    <bean id="myPet"
+          class="com.reestts.spring.introduction.Cat">
     </bean>
 
     <bean id="myPerson"
           class="com.reestts.spring.introduction.Person">
-        <property name="pet" ref="myCat"/>
+        <property name="pet" ref="myPet"/>
 
-        <property name="lastname" value="Ivanov"/>
-        <property name="age" value="20"/>
+        <property name="lastname" value="${person.lastname}"/>
+        <property name="age" value="${person.age}"/>
     </bean>
 
 </beans>
