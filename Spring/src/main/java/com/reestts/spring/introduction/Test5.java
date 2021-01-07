@@ -2,16 +2,16 @@ package com.reestts.spring.introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-// creating with Spring (IoC)
-public class Test2 {
+// using annotation @Autowired
+public class Test5 {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext
-                        ("applicationContext.xml");
+                        ("applicationContextComponent.xml");
 
-        Pet pet = context.getBean("myPet", Pet.class);
-        pet.say();
+        Person person = context.getBean("personBean", Person.class);
+        person.callPet();
 
         context.close();
     }
