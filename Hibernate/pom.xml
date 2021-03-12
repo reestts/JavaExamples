@@ -12,7 +12,7 @@
     <artifactId>Hibernate</artifactId>
 
     <properties>
-        <hibernate-core-version>5.4.18.Final</hibernate-core-version>
+        <hibernate-core-version>5.4.29.Final</hibernate-core-version>
     </properties>
 
     <dependencies>

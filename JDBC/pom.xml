@@ -11,14 +11,6 @@
 
     <artifactId>JDBC</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
-        </dependency>
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
