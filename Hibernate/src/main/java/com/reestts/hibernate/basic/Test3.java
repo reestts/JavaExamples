@@ -1,6 +1,6 @@
-package com.reestts.hibernate.test1;
+package com.reestts.hibernate.basic;
 
-import com.reestts.hibernate.test1.entity.Employee;
+import com.reestts.hibernate.basic.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -11,12 +11,12 @@ public class Test3 {
 
     // save table to list
     public static void main(String[] args) {
-        try (SessionFactory factory = new Configuration()
+        try (SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class)
                 .buildSessionFactory()) {
+            Session session = sessionFactory.getCurrentSession();
 
-            Session session = factory.getCurrentSession();
             session.beginTransaction();
 
             List<Employee> list = session.createQuery("from Employee").getResultList();

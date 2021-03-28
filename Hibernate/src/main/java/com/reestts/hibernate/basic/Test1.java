@@ -1,6 +1,6 @@
-package com.reestts.hibernate.test1;
+package com.reestts.hibernate.basic;
 
-import com.reestts.hibernate.test1.entity.Employee;
+import com.reestts.hibernate.basic.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -14,12 +14,12 @@ public class Test1 {
     private static final String SURNAME = "Ivanov";
 
     public static void main(String[] args) {
-        try (SessionFactory factory = new Configuration()
+        try (SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class)
                 .buildSessionFactory()) {
+            Session session = sessionFactory.getCurrentSession();
 
-            Session session = factory.getCurrentSession();
             Employee employee = new Employee(NAME, SURNAME, DEPARTMENT, SALARY);
 
             session.beginTransaction();

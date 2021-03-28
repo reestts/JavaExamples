@@ -1,13 +1,14 @@
-package com.reestts.hibernate.test1.entity;
+package com.reestts.hibernate.basic.entity;
 
 import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @Entity
@@ -15,7 +16,7 @@ import javax.persistence.Table;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = IDENTITY)
     @Column(name = "id")
     private int id;
 

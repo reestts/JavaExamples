@@ -1,26 +1,34 @@
-package com.reestts.hibernate.test2;
+package com.reestts.hibernate.one_to_one;
 
-import com.reestts.hibernate.test1.entity.Employee;
+import com.reestts.hibernate.one_to_one.entity.Detail;
+import com.reestts.hibernate.one_to_one.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
 public class Test1 {
 
-    // add record to table
+    // add Detail as cascade in Employee
     private static final int SALARY = 1000;
     private static final String DEPARTMENT = "security";
     private static final String NAME = "Petr";
     private static final String SURNAME = "Ivanov";
 
+    private static final String CITY = "Moscow";
+    private static final String EMAIL = "mail@gmail.com";
+    private static final String PHONE_NUMBER = "+7999065";
+
     public static void main(String[] args) {
-        try (SessionFactory factory = new Configuration()
+        try (SessionFactory sessionFactory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class)
+                .addAnnotatedClass(Detail.class)
                 .buildSessionFactory()) {
+            Session session = sessionFactory.getCurrentSession();
 
-            Session session = factory.getCurrentSession();
             Employee employee = new Employee(NAME, SURNAME, DEPARTMENT, SALARY);
+            Detail detail = new Detail(CITY, PHONE_NUMBER, EMAIL);
+            employee.setEmpDetail(detail);
 
             session.beginTransaction();
             session.save(employee);

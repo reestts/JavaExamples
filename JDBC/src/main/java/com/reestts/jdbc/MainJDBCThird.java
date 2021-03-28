@@ -1,7 +1,5 @@
 package com.reestts.jdbc;
 
-import com.mysql.fabric.jdbc.FabricMySQLDriver;
-
 import java.sql.*;
 
 public class MainJDBCThird {
@@ -21,7 +19,7 @@ public class MainJDBCThird {
         PreparedStatement preparedStatement = null;
 
         try {
-            Driver driver = new FabricMySQLDriver();
+            Driver driver = new com.mysql.jdbc.Driver();
             DriverManager.registerDriver(driver);
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 

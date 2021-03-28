@@ -1,9 +1,18 @@
-package com.reestts.hibernate.test2.entity;
+package com.reestts.hibernate.one_to_one.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import static javax.persistence.CascadeType.ALL;
+import static javax.persistence.GenerationType.IDENTITY;
 
 @Data
 @NoArgsConstructor
@@ -12,7 +21,7 @@ import javax.persistence.*;
 public class Employee {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = IDENTITY)
     @Column(name = "id")
     private int id;
 
@@ -28,7 +37,7 @@ public class Employee {
     @Column(name = "salary")
     private int salary;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = ALL)
     @JoinColumn(name = "details_id")
     private Detail empDetail;
 
