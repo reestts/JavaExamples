@@ -42,6 +42,10 @@ public class Section {
             inverseJoinColumns = @JoinColumn(name = "child_id"))
     private List<Child> children;
 
+    public Section(String name) {
+        this.name = name;
+    }
+
     @Override
     public String toString() {
         return "Section{" +
@@ -51,7 +55,7 @@ public class Section {
     }
 
     public void addChild(Child child) {
-        if (isNull(child)) {
+        if (isNull(children)) {
             children = new ArrayList<>();
         }
         children.add(child);

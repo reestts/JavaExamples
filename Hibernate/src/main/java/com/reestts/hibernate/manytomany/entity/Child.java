@@ -60,7 +60,7 @@ public class Child {
     }
 
     public void addSection(Section section) {
-        if (isNull(section)) {
+        if (isNull(sections)) {
             sections = new ArrayList<>();
         }
         sections.add(section);
