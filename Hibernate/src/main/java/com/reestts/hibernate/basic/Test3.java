@@ -19,7 +19,7 @@ public class Test3 {
 
             session.beginTransaction();
 
-            List<Employee> list = session.createQuery("from Employee").getResultList();
+            List<Employee> list = session.createQuery("from Child").getResultList();
             for (Employee employee : list) {
                 System.out.println(employee);
             }

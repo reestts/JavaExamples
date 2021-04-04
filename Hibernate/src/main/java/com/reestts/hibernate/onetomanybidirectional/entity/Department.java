@@ -1,4 +1,4 @@
-package com.reestts.hibernate.one_to_many.entity;
+package com.reestts.hibernate.onetomanybidirectional.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -58,7 +58,7 @@ public class Department {
                 '}';
     }
 
-    public void addEmployeeToDep(Employee employee) {
+    public void addEmployee(Employee employee) {
         if (isNull(employees)) {
             employees = new ArrayList<>();
         }

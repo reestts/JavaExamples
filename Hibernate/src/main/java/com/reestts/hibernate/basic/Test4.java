@@ -19,7 +19,7 @@ public class Test4 {
             Employee employee = session.get(Employee.class, 1);
             employee.setSalary(1750);
 
-            session.createQuery("update Employee set department = 'security' where id = 4").executeUpdate();
+            session.createQuery("update Child set department = 'security' where id = 4").executeUpdate();
 
             session.getTransaction().commit();
         }

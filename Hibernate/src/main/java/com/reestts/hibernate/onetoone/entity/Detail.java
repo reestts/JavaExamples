@@ -1,4 +1,4 @@
-package com.reestts.hibernate.one_to_one.entity;
+package com.reestts.hibernate.onetoone.entity;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

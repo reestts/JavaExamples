@@ -1,7 +1,7 @@
-package com.reestts.hibernate.one_to_many;
+package com.reestts.hibernate.onetomanybidirectional;
 
-import com.reestts.hibernate.one_to_many.entity.Department;
-import com.reestts.hibernate.one_to_many.entity.Employee;
+import com.reestts.hibernate.onetomanybidirectional.entity.Department;
+import com.reestts.hibernate.onetomanybidirectional.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

@@ -1,19 +1,20 @@
-package com.reestts.hibernate.basic.entity;
+package com.reestts.hibernate.onetoone.entity;
 
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import static javax.persistence.CascadeType.ALL;
 import static javax.persistence.GenerationType.IDENTITY;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @Entity
 @Table(name = "employees")
@@ -30,16 +31,20 @@ public class Employee {
     @Column(name = "surname")
     private String surname;
 
-    @Column(name = "department_id")
-    private String departmentId;
+    @Column(name = "department")
+    private String department;
 
     @Column(name = "salary")
     private int salary;
 
-    public Employee(String name, String surname, String departmentId, int salary) {
+    @OneToOne(cascade = ALL)
+    @JoinColumn(name = "details_id")
+    private Detail empDetail;
+
+    public Employee(String name, String surname, String department, int salary) {
         this.name = name;
         this.surname = surname;
-        this.departmentId = departmentId;
+        this.department = department;
         this.salary = salary;
     }
 }
