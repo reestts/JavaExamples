@@ -11,6 +11,10 @@
 
     <artifactId>JavaFX</artifactId>
 
+    <properties>
+        <java-fx-version>11.0.2</java-fx-version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
