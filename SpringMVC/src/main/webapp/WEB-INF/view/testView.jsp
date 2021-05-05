@@ -7,6 +7,10 @@
     Hello!
 </h2>
 
+<br>
+
+<a href="askDetails">Go to write name</a>
+
 </body>
 
 </html>
