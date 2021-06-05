@@ -16,6 +16,7 @@
         <module>Spring</module>
         <module>SpringMVC</module>
         <module>SpringMVC_DB_AOP</module>
+        <module>SpringREST</module>
     </modules>
 
     <properties>
