@@ -17,6 +17,7 @@
         <module>SpringMVC</module>
         <module>SpringMVC_DB_AOP</module>
         <module>SpringREST</module>
+        <module>SpringSecurity</module>
     </modules>
 
     <properties>
