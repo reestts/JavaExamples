@@ -14,6 +14,8 @@
         <module>JavaFX</module>
         <module>JDBC</module>
         <module>Spring</module>
+        <module>SpringBoot</module>
+        <module>SpringData</module>
         <module>SpringMVC</module>
         <module>SpringMVC_DB_AOP</module>
         <module>SpringREST</module>
