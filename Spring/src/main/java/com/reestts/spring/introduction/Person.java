@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component("personBean")
 public class Person {
+
     @Autowired
     @Qualifier("catBean")
     private Pet pet;
