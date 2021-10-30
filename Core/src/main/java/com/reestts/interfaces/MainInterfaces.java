@@ -1,6 +1,6 @@
 package com.reestts.interfaces;
 
-public class MainInterfaces implements Test {
+public class MainInterfaces implements TestInterface {
 
     @Override
     public void method1() {
@@ -9,10 +9,10 @@ public class MainInterfaces implements Test {
 
     @Override
     public void method2() {
-
+        TestInterface.super.method2();
     }
 
     public static void main(String[] args) {
-        Test.method3();
+        TestInterface.method3();
     }
 }
