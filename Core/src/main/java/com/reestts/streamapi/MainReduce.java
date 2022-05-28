@@ -11,12 +11,13 @@ public class MainReduce {
         listOfString.add("three");
         listOfString.add("four");
 
-        String result = listOfString.stream().reduce((accumulator, element) ->
-                accumulator + " " + element).get();
+        String result = listOfString.stream()
+                .reduce((accumulator, element) -> accumulator + " " + element)
+                .get();
         System.out.println(result);
 
-        String result2 = listOfString.stream().reduce("null", (accumulator, element) ->
-                accumulator + " " + element);
+        String result2 = listOfString.stream()
+                .reduce("null", (accumulator, element) -> accumulator + " " + element);
         System.out.println(result2);
     }
 }

@@ -3,7 +3,8 @@ package com.reestts.streamapi;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class MainMap {
     public static void main(String[] args) {
@@ -21,8 +22,9 @@ public class MainMap {
         //listOfString.stream().map(element -> element.length());
 
         // collect stream to list
-        List<Integer> listOfInteger = listOfString.stream().map(element -> element.length())
-                .collect(Collectors.toList());
+        List<Integer> listOfInteger = listOfString.stream()
+                .map(element -> element.length())
+                .collect(toList());
         System.out.println(listOfInteger);
 
         // array to stream

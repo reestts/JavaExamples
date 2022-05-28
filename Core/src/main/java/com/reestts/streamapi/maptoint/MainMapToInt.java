@@ -2,7 +2,8 @@ package com.reestts.streamapi.maptoint;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class MainMapToInt {
     public static void main(String[] args) {
@@ -14,9 +15,9 @@ public class MainMapToInt {
         cars.add(car2);
 
         List<Integer> powerOfCars = cars.stream()
-                .mapToInt(element -> element.getPower())
+                .mapToInt(Car::getPower)
                 .boxed()
-                .collect(Collectors.toList());
+                .collect(toList());
         System.out.println(powerOfCars);
     }
 }

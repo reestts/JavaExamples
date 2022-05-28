@@ -1,13 +1,12 @@
 package com.reestts.streamapi.maptoint;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@Data
 public class Car {
+
     int power;
 
-    public Car(int power) {
-        this.power = power;
-    }
-
-    public int getPower() {
-        return power;
-    }
 }

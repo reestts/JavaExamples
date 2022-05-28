@@ -1,13 +1,12 @@
 package com.reestts.streamapi.flatmap;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Cat {
+
     String name;
 
-    public Cat(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
 }

@@ -14,7 +14,8 @@ public class MainFindFirst {
                     }
                     return element;
                 })
-                .findFirst().getAsInt();
+                .findFirst()
+                .getAsInt();
 
         System.out.println(result);
     }

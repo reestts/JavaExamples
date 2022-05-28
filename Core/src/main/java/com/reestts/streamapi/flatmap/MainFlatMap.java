@@ -15,7 +15,7 @@ public class MainFlatMap {
         List<Animal> list = new ArrayList<>();
         list.add(animals);
 
-        list.stream().flatMap(animal -> animal.getListOfCats()
-                .stream()).forEach(element -> System.out.println(element.getName()));
+        list.stream().flatMap(animal -> animal.getListOfCats().stream())
+                .forEach(element -> System.out.println(element.getName()));
     }
 }

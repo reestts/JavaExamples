@@ -12,7 +12,8 @@ public class ParallelStream {
         list.add(0.5);
 
         double result = list.parallelStream()
-                .reduce((accumulator, element) -> accumulator + element).get();
+                .reduce((accumulator, element) -> accumulator + element)
+                .get();
 
         System.out.println(result);
     }

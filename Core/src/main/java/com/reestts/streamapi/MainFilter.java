@@ -2,7 +2,8 @@ package com.reestts.streamapi;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class MainFilter {
     public static void main(String[] args) {
@@ -12,8 +13,9 @@ public class MainFilter {
         listOfString.add("three");
         listOfString.add("four");
 
-        listOfString = listOfString.stream().filter(element ->
-                element.length() > 3).collect(Collectors.toList());
+        listOfString = listOfString.stream()
+                .filter(element -> element.length() > 3)
+                .collect(toList());
 
         System.out.println(listOfString);
     }

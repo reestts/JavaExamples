@@ -25,9 +25,9 @@ public class OldApproachUtil {
     // Поиск по специальности
     public static List<Specialist> filterBySpecialty(List<Specialist> specialists, Specialty specialty) {
         List<Specialist> result = new ArrayList<>();
-        for (int i = 0; i < specialists.size(); i++) {
-            if (specialists.get(i).getSpecialty().equals(specialty)) {
-                result.add(specialists.get(i));
+        for (Specialist spec : specialists) {
+            if (spec.getSpecialty().equals(specialty)) {
+                result.add(spec);
             }
         }
         return result;
@@ -35,8 +35,8 @@ public class OldApproachUtil {
 
     // Проверка совпадений все инженеры
     public static boolean matchAllEngineers(List<Specialist> specialists) {
-        for (int i = 0; i < specialists.size(); i++) {
-            if (!specialists.get(i).getSpecialty().equals(Specialty.ENGINEER)) {
+        for (Specialist spec : specialists) {
+            if (!spec.getSpecialty().equals(Specialty.ENGINEER)) {
                 return false;
             }
         }
@@ -44,9 +44,9 @@ public class OldApproachUtil {
     }
 
     // Проверка совпадений - есть ли инженеры
-    public static boolean matchAnyEnginner(List<Specialist> specialists) {
-        for (int i = 0; i < specialists.size(); i++) {
-            if (specialists.get(i).getSpecialty().equals(Specialty.ENGINEER)) {
+    public static boolean matchAnyEngineer(List<Specialist> specialists) {
+        for (Specialist spec : specialists) {
+            if (spec.getSpecialty().equals(Specialty.ENGINEER)) {
                 return true;
             }
         }
@@ -55,8 +55,8 @@ public class OldApproachUtil {
 
     // Проверка совпадений - все ли имеют ЗП выше указанной
     public static boolean matchAllSalaryMoreThen(List<Specialist> specialists, BigDecimal salary) {
-        for (int i = 0; i < specialists.size(); i++) {
-            if (specialists.get(i).getSalary().compareTo(salary) < 0) {
+        for (Specialist spec : specialists) {
+            if (spec.getSalary().compareTo(salary) < 0) {
                 return false;
             }
         }
@@ -65,8 +65,8 @@ public class OldApproachUtil {
 
     // Проверка совпадений - никто не имеет ЗП выше указанной
     public static boolean matchNoneSalaryMoreThen(List<Specialist> specialists, BigDecimal salary) {
-        for (int i = 0; i < specialists.size(); i++) {
-            if (specialists.get(i).getSalary().compareTo(salary) > 0) {
+        for (Specialist spec : specialists) {
+            if (spec.getSalary().compareTo(salary) > 0) {
                 return false;
             }
         }
@@ -82,8 +82,8 @@ public class OldApproachUtil {
     public static Map<Specialty, List<Specialist>> groupBySpecialty(List<Specialist> specialists) {
         Map<Specialty, List<Specialist>> result = new HashMap<>();
         Specialty[] specialties = Specialty.class.getEnumConstants();
-        for (int i = 0; i < specialties.length; i++) {
-            result.put(specialties[i], new ArrayList<>());
+        for (Specialty spec : specialties) {
+            result.put(spec, new ArrayList<>());
         }
 
         /// ... many many many redundant code ...

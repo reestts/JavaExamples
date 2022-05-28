@@ -2,7 +2,8 @@ package com.reestts.streamapi;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 public class MainSorted {
     public static void main(String[] args) {
@@ -13,7 +14,8 @@ public class MainSorted {
         listOfString.add("four");
 
         List<String> listOfString2 = listOfString.stream()
-                .sorted().collect(Collectors.toList());
+                .sorted()
+                .collect(toList());
         System.out.println(listOfString2);
     }
 }
