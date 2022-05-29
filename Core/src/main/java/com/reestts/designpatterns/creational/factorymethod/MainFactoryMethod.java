@@ -1,6 +1,6 @@
 package com.reestts.designpatterns.creational.factorymethod;
 
-public class Main {
+public class MainFactoryMethod {
 
     public static void main(String[] args) {
         DeveloperFactory factory = create("Java");

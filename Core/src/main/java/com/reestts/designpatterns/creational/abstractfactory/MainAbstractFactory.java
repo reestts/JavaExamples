@@ -1,6 +1,6 @@
 package com.reestts.designpatterns.creational.abstractfactory;
 
-public class Main {
+public class MainAbstractFactory {
 
     public static void main(String[] args) {
 

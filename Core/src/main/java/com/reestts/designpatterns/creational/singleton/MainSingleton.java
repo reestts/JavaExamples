@@ -1,6 +1,6 @@
 package com.reestts.designpatterns.creational.singleton;
 
-public class Main {
+public class MainSingleton {
 
     public static void main(String[] args) {
         ProgramLogger.getLogger().addLogInfo("First log...");

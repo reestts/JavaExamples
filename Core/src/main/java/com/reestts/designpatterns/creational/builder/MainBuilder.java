@@ -1,6 +1,6 @@
 package com.reestts.designpatterns.creational.builder;
 
-public class Main {
+public class MainBuilder {
 
     public static void main(String[] args) {
         Director director = new Director();

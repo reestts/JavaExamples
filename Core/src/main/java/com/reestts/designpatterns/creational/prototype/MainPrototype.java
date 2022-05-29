@@ -1,6 +1,6 @@
 package com.reestts.designpatterns.creational.prototype;
 
-public class Main {
+public class MainPrototype {
 
     public static void main(String[] args) {
         Project master = new Project(1, "Base", "source");
