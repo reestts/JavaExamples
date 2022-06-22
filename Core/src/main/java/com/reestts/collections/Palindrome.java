@@ -3,6 +3,7 @@ package com.reestts.collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Objects;
 
 public class Palindrome {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Palindrome {
         ListIterator<Character> listIteratorFromEnd = list.listIterator(list.size());
         boolean isPalindrome = true;
         while (listIteratorFromStart.hasNext() && listIteratorFromEnd.hasPrevious()) {
-            if (listIteratorFromStart.next() != listIteratorFromEnd.previous()) {
+            if (!Objects.equals(listIteratorFromStart.next(), listIteratorFromEnd.previous())) {
                 isPalindrome = false;
                 break;
             }
