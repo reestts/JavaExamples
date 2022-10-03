@@ -1,11 +1,10 @@
 package com.reestts.springmvc;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -13,6 +12,7 @@ import java.util.Map;
 @Getter
 @Setter
 public class Employee {
+
     @Size(min = 3, message = "name must be min 3 symbols")
     private String name;
     @NotBlank(message = "surname is required field")

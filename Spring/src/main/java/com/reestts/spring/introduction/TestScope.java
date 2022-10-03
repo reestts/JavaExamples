@@ -1,8 +1,11 @@
 package com.reestts.spring.introduction;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 public class TestScope {
+    @Transactional()
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context =
