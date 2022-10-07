@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class MainComparison {
+
     public static void main(String[] args) {
         //default sort
         List<String> listOfString = new ArrayList<>();
@@ -41,7 +42,7 @@ public class MainComparison {
         listOfEmployee2.add(employee5);
         listOfEmployee2.add(employee6);
         System.out.println(listOfEmployee2 + " - before sort");
-        Collections.sort(listOfEmployee2, new IdComparator());
+        listOfEmployee2.sort(new IdComparator());
         System.out.println(listOfEmployee2 + " - after sort");
     }
 }

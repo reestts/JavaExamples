@@ -8,10 +8,10 @@ public class MainRegex {
     public static void main(String[] args) {
         String sOne = "ABCD ABCDE ABCBFBANSHS";
         Pattern pattern = Pattern.compile("ABCD");
-        Matcher mathcerOne = pattern.matcher(sOne);
+        Matcher matcherOne = pattern.matcher(sOne);
 
-        while (mathcerOne.find()) {
-            System.out.println(mathcerOne.group());
+        while (matcherOne.find()) {
+            System.out.println(matcherOne.group());
         }
 
         System.out.println();

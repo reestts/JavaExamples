@@ -1,6 +1,7 @@
 package com.reestts.stacktrace;
 
 public class MainStackTrace {
+
     public static void main(String[] args) {
         method1();
     }

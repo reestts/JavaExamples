@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 public class OutputMap {
+
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
         map.put("1", "first");
@@ -22,15 +23,15 @@ public class OutputMap {
         System.out.println(valueList);
 
         // long
-//        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
-//        while (iterator.hasNext()) {
-//            Map.Entry<String, String> pair = iterator.next();
-//            String key = pair.getKey();
-//            String value = pair.getValue();
-//            System.out.print(key + " : " + value);
-//        }
+        Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
+        while (iterator.hasNext()) {
+            Map.Entry<String, String> pair = iterator.next();
+            String key = pair.getKey();
+            String value = pair.getValue();
+            System.out.print(key + " : " + value);
+        }
 
         // short
-//        map.forEach((key, value) -> System.out.print(key + " : " + value));
+        map.forEach((key, value) -> System.out.print(key + " : " + value));
     }
 }

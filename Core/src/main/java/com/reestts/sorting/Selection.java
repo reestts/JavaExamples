@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Selection {
+
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(6);

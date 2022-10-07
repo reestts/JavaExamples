@@ -5,7 +5,7 @@ public class MainCreate {
         ThreadFromClass threadFromClass = new ThreadFromClass();
         threadFromClass.start();
 
-        Thread thread = new Thread(new ThreadFromInterface());
-        thread.start();
+        Thread threadFromInterface = new Thread(new ThreadFromInterface());
+        threadFromInterface.start();
     }
 }

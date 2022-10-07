@@ -1,6 +1,7 @@
 package com.reestts.multithreading.daemon;
 
 public class MainDaemon {
+
     public static void main(String[] args) {
         System.out.println("Main thread starts");
 

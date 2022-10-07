@@ -1,7 +1,8 @@
 package com.reestts.generics;
 
 public class Info<T> {
-    private T value;
+
+    private final T value;
 
     public Info(T value) {
         this.value = value;

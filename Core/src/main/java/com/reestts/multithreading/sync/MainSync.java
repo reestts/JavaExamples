@@ -1,6 +1,7 @@
 package com.reestts.multithreading.sync;
 
 public class MainSync {
+
     public static void main(String[] args) {
         TestThread thread1 = new TestThread();
         TestThread thread2 = new TestThread();

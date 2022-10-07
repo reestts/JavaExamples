@@ -1,6 +1,7 @@
 package com.reestts.nestedclasses.local;
 
 public class Result {
+
     public void getResult() {
         class Summa {
             private int a;

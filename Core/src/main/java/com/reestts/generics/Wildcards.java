@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Wildcards {
+
     static void showListInfo(List<?> list) {
         System.out.println(list);
     }

@@ -1,6 +1,7 @@
 package com.reestts.multithreading.waitnotify;
 
 public class Market {
+
     private int fruitCount = 0;
 
     public synchronized void getFruit() {
@@ -14,7 +15,7 @@ public class Market {
         fruitCount--;
         System.out.println("Consumer get 1 fruit");
         System.out.println("Fruit in market = " + fruitCount);
-        notify();
+        notifyAll();
     }
 
     public synchronized void addFruit() {
@@ -28,6 +29,6 @@ public class Market {
         fruitCount++;
         System.out.println("Producer add 1 fruit");
         System.out.println("Fruit in market = " + fruitCount);
-        notify();
+        notifyAll();
     }
 }

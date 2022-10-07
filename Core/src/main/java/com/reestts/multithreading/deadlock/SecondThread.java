@@ -1,6 +1,7 @@
 package com.reestts.multithreading.deadlock;
 
 public class SecondThread extends Thread {
+
     @Override
     public void run() {
         System.out.println("SecondThread want catch the monitor of object lock2");

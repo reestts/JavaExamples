@@ -1,6 +1,7 @@
 package com.reestts.nestedclasses.staticnested;
 
 public class Car {
+
     String color;
     int doorCount;
     Engine engine;

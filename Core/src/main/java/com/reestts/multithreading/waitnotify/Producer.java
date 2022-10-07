@@ -1,6 +1,7 @@
 package com.reestts.multithreading.waitnotify;
 
 public class Producer implements Runnable {
+
     Market market;
 
     Producer(Market market) {

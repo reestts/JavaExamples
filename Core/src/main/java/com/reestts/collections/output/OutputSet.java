@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class OutputSet {
+
     public static void main(String[] args) {
         Set<Integer> set = new HashSet<>();
         set.add(1);

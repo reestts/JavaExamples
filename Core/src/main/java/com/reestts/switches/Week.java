@@ -1,6 +1,7 @@
 package com.reestts.switches;
 
 public class Week {
+
     public static void days(int number) {
         switch (number) {
             case 1 -> System.out.println("Monday");

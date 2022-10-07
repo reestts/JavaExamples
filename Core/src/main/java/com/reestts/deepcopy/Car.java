@@ -1,5 +1,8 @@
 package com.reestts.deepcopy;
 
+import lombok.EqualsAndHashCode;
+
+@EqualsAndHashCode
 public class Car {
 
     private String factory;

@@ -1,6 +1,7 @@
 package com.reestts.multithreading.monitor;
 
 public class Calls {
+
     static final Object callLock = new Object();
 
     void mobileCall() {

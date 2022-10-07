@@ -33,6 +33,6 @@ public class MainReflection {
         System.out.println("*****");
 
         Constructor constructor = class3.getConstructor(int.class, String.class, String.class);
-        System.out.println(Arrays.toString(constructor.getParameterTypes()));
+        System.out.println("Parameter types = " + Arrays.toString(constructor.getParameterTypes()));
     }
 }

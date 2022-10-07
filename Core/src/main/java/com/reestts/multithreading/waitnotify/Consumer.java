@@ -1,6 +1,7 @@
 package com.reestts.multithreading.waitnotify;
 
 public class Consumer implements Runnable {
+
     Market market;
 
     Consumer(Market market) {

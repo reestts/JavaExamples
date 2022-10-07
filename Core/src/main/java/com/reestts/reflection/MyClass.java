@@ -1,21 +1,17 @@
 package com.reestts.reflection;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class MyClass {
 
-    public int number;
-    public String type;
+    private int number;
+    private String type;
     private String secret;
 
     public void updateType() {
         type = type + type;
-    }
-
-    public MyClass() {
-    }
-
-    public MyClass(int number, String type, String secret) {
-        this.number = number;
-        this.type = type;
-        this.secret = secret;
     }
 }

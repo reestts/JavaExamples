@@ -1,6 +1,7 @@
 package com.reestts.multithreading.daemon;
 
 public class DaemonThread extends Thread {
+
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName() + " is daemon: " + isDaemon());

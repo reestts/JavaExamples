@@ -3,6 +3,7 @@ package com.reestts.streamapi;
 import java.util.Arrays;
 
 public class MainFindFirst {
+
     public static void main(String[] args) {
         int[] array = {1, 22, 5, 71, 8, 5, 4, 3, 65, 72, 8, 45, 4,};
 

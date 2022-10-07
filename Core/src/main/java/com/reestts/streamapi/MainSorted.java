@@ -6,6 +6,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 public class MainSorted {
+
     public static void main(String[] args) {
         List<String> listOfString = new ArrayList<>();
         listOfString.add("one");

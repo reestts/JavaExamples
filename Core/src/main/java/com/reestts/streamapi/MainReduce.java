@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainReduce {
+
     public static void main(String[] args) {
         List<String> listOfString = new ArrayList<>();
         listOfString.add("one");

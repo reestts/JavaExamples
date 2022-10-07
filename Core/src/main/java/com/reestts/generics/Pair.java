@@ -1,8 +1,9 @@
 package com.reestts.generics;
 
 public class Pair<V1, V2> {
-    private V1 value1;
-    private V2 value2;
+
+    private final V1 value1;
+    private final V2 value2;
 
     public Pair(V1 value1, V2 value2) {
         this.value1 = value1;

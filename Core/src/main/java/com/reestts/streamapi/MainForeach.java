@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainForeach {
+
     public static void main(String[] args) {
         List<String> listOfString = new ArrayList<>();
         listOfString.add("one");
@@ -11,7 +12,7 @@ public class MainForeach {
         listOfString.add("three");
         listOfString.add("four");
 
-        listOfString.stream().forEach(element -> {
+        listOfString.forEach(element -> {
             element += " is a number";
             System.out.println(element);
         });

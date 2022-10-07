@@ -1,6 +1,7 @@
 package com.reestts.multithreading;
 
 public class MainVolatile extends Thread {
+
     volatile boolean b = true;
 
     @Override

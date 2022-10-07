@@ -1,6 +1,7 @@
 package com.reestts.multithreading.waitnotify;
 
 public class MainWaitNotify {
+
     public static void main(String[] args) {
         Market market = new Market();
         Producer producer = new Producer(market);

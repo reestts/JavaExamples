@@ -1,6 +1,7 @@
 package com.reestts.collections.comparison;
 
 public class Employee implements Comparable<Employee> {
+
     int id;
     String name;
     int salary;
@@ -25,10 +26,12 @@ public class Employee implements Comparable<Employee> {
         // long version compare for id
         if (this.id == anotherEmp.id) {
             return 0;
-        } else if (this.id < anotherEmp.id) {
-            return -1;
         } else {
-            return 1;
+            if (this.id < anotherEmp.id) {
+                return -1;
+            } else {
+                return 1;
+            }
         }
 
         //short version compare for id:
