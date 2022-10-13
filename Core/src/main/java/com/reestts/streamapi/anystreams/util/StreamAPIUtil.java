@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StreamAPIUtil {
+
     // Получение начального списка специалистов
     public static List<Specialist> getSpecialists() {
         return List.of(
@@ -45,22 +46,26 @@ public class StreamAPIUtil {
 
     // Проверка совпадений все инженеры
     public static boolean matchAllEngineers(List<Specialist> specialists) {
-        return specialists.stream().allMatch(specialist -> specialist.getSpecialty().equals(Specialty.ENGINEER));
+        return specialists.stream()
+                .allMatch(specialist -> specialist.getSpecialty().equals(Specialty.ENGINEER));
     }
 
     // Проверка совпадений - есть ли инженеры
     public static boolean matchAnyEngineer(List<Specialist> specialists) {
-        return specialists.stream().anyMatch(specialist -> specialist.getSpecialty().equals(Specialty.ENGINEER));
+        return specialists.stream()
+                .anyMatch(specialist -> specialist.getSpecialty().equals(Specialty.ENGINEER));
     }
 
     // Проверка совпадений - все ли имеют ЗП выше указанной
     public static boolean matchAllSalaryMoreThen(List<Specialist> specialists, BigDecimal salary) {
-        return specialists.stream().allMatch(specialist -> specialist.getSalary().compareTo(salary) > 0);
+        return specialists.stream()
+                .allMatch(specialist -> specialist.getSalary().compareTo(salary) > 0);
     }
 
     // Проверка совпадений - никто не имеет ЗП выше указанной
     public static boolean matchNoneSalaryMoreThen(List<Specialist> specialists, BigDecimal salary) {
-        return specialists.stream().noneMatch(specialist -> specialist.getSalary().compareTo(salary) > 0);
+        return specialists.stream()
+                .noneMatch(specialist -> specialist.getSalary().compareTo(salary) > 0);
     }
 
     // Вывод в консоль
@@ -70,16 +75,21 @@ public class StreamAPIUtil {
 
     // Поиск специалиста с максимальной ЗП
     public static Specialist findWithMaxSalary(List<Specialist> specialists) {
-        return specialists.stream().max(Comparator.comparing(Specialist::getSalary)).orElse(null);
+        return specialists.stream()
+                .max(Comparator.comparing(Specialist::getSalary))
+                .orElse(null);
     }
 
     // Поиск специалиста с минимальной ЗП
     public static Specialist findWithMinSalary(List<Specialist> specialists) {
-        return specialists.stream().min(Comparator.comparing(Specialist::getSalary)).orElse(null);
+        return specialists.stream()
+                .min(Comparator.comparing(Specialist::getSalary))
+                .orElse(null);
     }
 
     // Группировка по специалистов специальности
     public static Map<Specialty, List<Specialist>> groupBySpecialty(List<Specialist> specialists) {
-        return specialists.stream().collect(Collectors.groupingBy(Specialist::getSpecialty));
+        return specialists.stream()
+                .collect(Collectors.groupingBy(Specialist::getSpecialty));
     }
 }
