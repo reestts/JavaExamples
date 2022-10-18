@@ -1,4 +1,4 @@
-package com.reestts.annotation;
+package com.reestts.annotations;
 
 @SmartPhone(yearOfCompany = 1946)
 public class Sony {

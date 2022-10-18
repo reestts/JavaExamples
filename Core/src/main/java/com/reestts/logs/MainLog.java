@@ -1,4 +1,4 @@
-package com.reestts.log;
+package com.reestts.logs;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
