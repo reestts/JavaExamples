@@ -1,4 +1,4 @@
-package com.reestts.concurrency;
+package com.reestts.concurrency.volatiles;
 
 public class MainVolatile extends Thread {
 

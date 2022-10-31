@@ -1,6 +1,6 @@
 package com.reestts.concurrency.join;
 
-public class MyThread extends Thread {
+public class TestThread extends Thread {
 
     @Override
     public void run() {

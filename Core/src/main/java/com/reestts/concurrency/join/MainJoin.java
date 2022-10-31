@@ -3,14 +3,14 @@ package com.reestts.concurrency.join;
 public class MainJoin {
 
     public static void main(String[] args) throws InterruptedException {
-        MyThread myThread1 = new MyThread();
-        MyThread myThread2 = new MyThread();
+        TestThread testThread1 = new TestThread();
+        TestThread testThread2 = new TestThread();
 
-        myThread1.start();
-        myThread2.start();
+        testThread1.start();
+        testThread2.start();
 
-        myThread1.join();
-        myThread2.join();
+        testThread1.join();
+        testThread2.join();
 
         System.out.println("End of program");
     }

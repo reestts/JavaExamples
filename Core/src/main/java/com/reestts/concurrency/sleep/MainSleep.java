@@ -1,4 +1,4 @@
-package com.reestts.concurrency;
+package com.reestts.concurrency.sleep;
 
 public class MainSleep {
 
