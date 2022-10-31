@@ -1,4 +1,4 @@
-package com.reestts.math;
+package com.reestts.algorithm;
 
 public class LCM {
 

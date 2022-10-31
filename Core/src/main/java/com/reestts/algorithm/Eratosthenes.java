@@ -1,4 +1,4 @@
-package com.reestts.math;
+package com.reestts.algorithm;
 
 import java.util.ArrayList;
 import java.util.List;

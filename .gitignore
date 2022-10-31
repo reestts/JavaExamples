@@ -1,5 +1,6 @@
 .idea
 /Core/target
+/Core/src/main/java/com/reestts/test
 /Hibernate/target
 /JavaFX/target
 /JDBC/target
