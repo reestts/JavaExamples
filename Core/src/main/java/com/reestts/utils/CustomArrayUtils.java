@@ -3,7 +3,7 @@ package com.reestts.utils;
 import lombok.experimental.UtilityClass;
 
 @UtilityClass
-public class ArrayUtils {
+public class CustomArrayUtils {
 
     public static void outputArray(int[] array) {
         for (int i = 0; i < array.length; i++) {

@@ -23,12 +23,13 @@
     </modules>
 
     <properties>
-        <slf4j-version>1.7.36</slf4j-version>
-        <logback-classic-version>1.2.9</logback-classic-version>
-        <mysql-connector-version>8.0.28</mysql-connector-version>
-        <junit-version>4.13.2</junit-version>
+        <slf4j-version>2.0.3</slf4j-version>
+        <logback-classic-version>1.4.4</logback-classic-version>
         <lombok-version>1.18.24</lombok-version>
-        <mockito-core-version>4.6.1</mockito-core-version>
+        <apache-commons-version>3.12.0</apache-commons-version>
+        <mysql-connector-version>8.0.31</mysql-connector-version>
+        <junit-version>4.13.2</junit-version>
+        <mockito-core-version>4.8.0</mockito-core-version>
     </properties>
 
     <dependencies>
@@ -82,6 +83,12 @@
             <artifactId>mockito-core</artifactId>
             <version>${mockito-core-version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${apache-commons-version}</version>
         </dependency>
     </dependencies>
 

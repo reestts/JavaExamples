@@ -19,18 +19,18 @@ public class QuickSortList {
         list.add(4);
         log.info("List: {}", list);
 
-        List<Integer> sortedList = sort(list, 0, list.size());
+        List<Integer> sortedList = quickSort(list, 0, list.size());
 
         log.info("Sorted list: {}", sortedList);
     }
 
-    static List<Integer> sort(List<Integer> list, int index, int size) {
+    static List<Integer> quickSort(List<Integer> list, int index, int size) {
         if (index == size) {
             return list;
         }
         int pivot = partition(list, index, size);
-        sort(list, index, pivot);
-        sort(list, pivot + 1, size);
+        quickSort(list, index, pivot);
+        quickSort(list, pivot + 1, size);
         return list;
     }
 

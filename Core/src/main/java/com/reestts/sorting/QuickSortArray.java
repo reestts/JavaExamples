@@ -1,7 +1,7 @@
 package com.reestts.sorting;
 
-import static com.reestts.utils.ArrayUtils.outputArray;
-import static com.reestts.utils.ArrayUtils.swapElements;
+import static com.reestts.utils.CustomArrayUtils.outputArray;
+import static com.reestts.utils.CustomArrayUtils.swapElements;
 
 public class QuickSortArray {
 
@@ -9,20 +9,19 @@ public class QuickSortArray {
         int[] array = new int[]{6, 8, 1, 3, 2, 9, 4};
         outputArray(array);
 
-        int[] sortedArray = sort(array, 0, array.length);
+        quickSort(array, 0, array.length);
 
         System.out.println();
-        outputArray(sortedArray);
+        outputArray(array);
     }
 
-    static int[] sort(int[] array, int index, int size) {
+    static void quickSort(int[] array, int index, int size) {
         if (index == size) {
-            return array;
+            return;
         }
         int pivot = partition(array, index, size);
-        sort(array, index, pivot);
-        sort(array, pivot + 1, size);
-        return array;
+        quickSort(array, index, pivot);
+        quickSort(array, pivot + 1, size);
     }
 
     static int partition(int[] array, int i, int size) {

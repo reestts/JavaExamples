@@ -2,7 +2,7 @@ package com.reestts.sorting;
 
 import java.util.Arrays;
 
-import static com.reestts.utils.ArrayUtils.outputArray;
+import static com.reestts.utils.CustomArrayUtils.outputArray;
 
 public class CountingSortArray {
 

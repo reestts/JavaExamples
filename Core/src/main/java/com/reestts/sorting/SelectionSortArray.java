@@ -1,7 +1,7 @@
 package com.reestts.sorting;
 
-import static com.reestts.utils.ArrayUtils.outputArray;
-import static com.reestts.utils.ArrayUtils.swapElements;
+import static com.reestts.utils.CustomArrayUtils.outputArray;
+import static com.reestts.utils.CustomArrayUtils.swapElements;
 
 public class SelectionSortArray {
 
