@@ -3,8 +3,10 @@ package com.reestts.sorting;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import lombok.extern.slf4j.Slf4j;
 
-public class Counting {
+@Slf4j
+public class CountingSortList {
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -15,12 +17,10 @@ public class Counting {
         list.add(2);
         list.add(9);
         list.add(4);
-
-        System.out.println(list);
+        log.info("List: {}", list);
 
         int min = list.get(0);
         int max = list.get(0);
-
         for (Integer i : list) {
             if (i > max) {
                 max = i;
@@ -29,21 +29,19 @@ public class Counting {
                 min = i;
             }
         }
-
         List<Integer> tempList = new ArrayList<>();
-        for (int i = 0; i < max - min + 1; i++) {
+        for (int i = 0; i < max; i++) {
             tempList.add(0);
         }
-
         for (Integer i : list) {
             int index = i - min;
             tempList.set(index, i);
         }
-
         list.clear();
         list = tempList.stream()
                 .filter(element -> element != 0)
                 .collect(Collectors.toList());
-        System.out.println(list);
+
+        log.info("List: {}", list);
     }
 }

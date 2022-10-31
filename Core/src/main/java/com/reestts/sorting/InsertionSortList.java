@@ -2,8 +2,10 @@ package com.reestts.sorting;
 
 import java.util.ArrayList;
 import java.util.List;
+import lombok.extern.slf4j.Slf4j;
 
-public class Insertion {
+@Slf4j
+public class InsertionSortList {
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
@@ -14,8 +16,7 @@ public class Insertion {
         list.add(2);
         list.add(9);
         list.add(4);
-
-        System.out.println(list);
+        log.info("List: {}", list);
 
         for (int i = 1; i < list.size(); i++) {
             int current = list.get(i);
@@ -28,6 +29,6 @@ public class Insertion {
             list.set(j + 1, current);
         }
 
-        System.out.println(list);
+        log.info("List: {}", list);
     }
 }
