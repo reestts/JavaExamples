@@ -28,6 +28,7 @@
         <c3p0-version>0.9.5.5</c3p0-version>
         <hibernate-core-version>6.1.5.Final</hibernate-core-version>
         <javax.annotation-api-version>1.3.2</javax.annotation-api-version>
+        <javax.persistence-api-version>2.2</javax.persistence-api-version>
         <javax.servlet-api-version>2.5</javax.servlet-api-version>
         <javax.javax-servlet-api-version>4.0.1</javax.javax-servlet-api-version>
         <junit-version>4.13.2</junit-version>
@@ -137,15 +138,15 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-            <version>${javax.annotation-api-version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>com.mchange</groupId>
             <artifactId>c3p0</artifactId>
             <version>${c3p0-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>${javax.annotation-api-version}</version>
         </dependency>
 
         <dependency>
@@ -160,6 +161,12 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.javax-servlet-api-version}</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>${javax.persistence-api-version}</version>
         </dependency>
     </dependencies>
 
