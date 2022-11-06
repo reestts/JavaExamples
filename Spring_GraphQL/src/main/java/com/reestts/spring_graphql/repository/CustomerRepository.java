@@ -1,5 +1,6 @@
-package com.reestts.spring_graphql.data;
+package com.reestts.spring_graphql.repository;
 
+import com.reestts.spring_graphql.entity.Customer;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 

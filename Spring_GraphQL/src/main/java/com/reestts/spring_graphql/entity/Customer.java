@@ -1,4 +1,4 @@
-package com.reestts.spring_graphql.data;
+package com.reestts.spring_graphql.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -40,75 +40,75 @@ public class Customer {
     @Column(name = "ZIPCODE")
     private String zipcode;
 
-    private Long getId() {
+    public Long getId() {
         return id;
     }
 
-    private void setId(final Long id) {
+    public void setId(final Long id) {
         this.id = id;
     }
 
-    private String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    private void setFirstName(final String firstName) {
+    public void setFirstName(final String firstName) {
         this.firstName = firstName;
     }
 
-    private String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    private void setLastName(final String lastName) {
+    public void setLastName(final String lastName) {
         this.lastName = lastName;
     }
 
-    private String getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    private void setEmail(final String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
-    private String getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    private void setPhoneNumber(final String phoneNumber) {
+    public void setPhoneNumber(final String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
-    private String getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    private void setAddress(final String address) {
+    public void setAddress(final String address) {
         this.address = address;
     }
 
-    private String getCity() {
+    public String getCity() {
         return city;
     }
 
-    private void setCity(final String city) {
+    public void setCity(final String city) {
         this.city = city;
     }
 
-    private String getState() {
+    public String getState() {
         return state;
     }
 
-    private void setState(final String state) {
+    public void setState(final String state) {
         this.state = state;
     }
 
-    private String getZipcode() {
+    public String getZipcode() {
         return zipcode;
     }
 
-    private void setZipcode(final String zipcode) {
+    public void setZipcode(final String zipcode) {
         this.zipcode = zipcode;
     }
 }
