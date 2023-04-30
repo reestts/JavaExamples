@@ -9,13 +9,19 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>Cassandra</module>
         <module>Core</module>
+        <module>Docker</module>
+        <module>ELK</module>
         <module>Hibernate</module>
         <module>JavaFX</module>
         <module>JDBC</module>
+        <module>MongoDB</module>
+        <module>PostgreSQL</module>
         <module>Spring</module>
         <module>Spring_GraphQL</module>
         <module>SpringBoot</module>
+        <module>SpringBoot_RabbitMQ</module>
         <module>SpringData</module>
         <module>SpringMVC</module>
         <module>SpringMVC_DB_AOP</module>
@@ -32,13 +38,13 @@
         <javax.servlet-api-version>2.5</javax.servlet-api-version>
         <javax.javax-servlet-api-version>4.0.1</javax.javax-servlet-api-version>
         <junit-version>4.13.2</junit-version>
-        <logback-classic-version>1.4.4</logback-classic-version>
-        <lombok-version>1.18.24</lombok-version>
-        <mockito-core-version>4.8.0</mockito-core-version>
-        <mysql-connector-version>8.0.31</mysql-connector-version>
-        <slf4j-version>2.0.3</slf4j-version>
-        <spring-version>5.3.23</spring-version>
-        <spring-boot-starter-version>2.7.5</spring-boot-starter-version>
+        <logback-classic-version>1.4.6</logback-classic-version>
+        <lombok-version>1.18.26</lombok-version>
+        <mockito-core-version>5.2.0</mockito-core-version>
+        <mysql-connector-version>8.0.32</mysql-connector-version>
+        <slf4j-version>2.0.5</slf4j-version>
+        <spring-version>6.0.6</spring-version>
+        <spring-boot-starter-version>3.0.4</spring-boot-starter-version>
     </properties>
 
     <dependencies>
