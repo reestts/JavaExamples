@@ -1,4 +1,4 @@
-package com.reestts.sorting;
+package com.reestts.sorting.array;
 
 import java.util.Arrays;
 

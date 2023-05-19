@@ -1,4 +1,4 @@
-package com.reestts.sorting;
+package com.reestts.sorting.array;
 
 import static com.reestts.utils.CustomArrayUtils.outputArray;
 

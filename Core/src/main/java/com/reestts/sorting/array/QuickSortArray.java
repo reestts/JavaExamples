@@ -1,4 +1,4 @@
-package com.reestts.sorting;
+package com.reestts.sorting.array;
 
 import static com.reestts.utils.CustomArrayUtils.outputArray;
 import static com.reestts.utils.CustomArrayUtils.swapElements;
@@ -32,6 +32,8 @@ public class QuickSortArray {
                 index++;
                 swapElements(array, index, k);
             }
+            System.out.println();
+            outputArray(array);
         }
         swapElements(array, pivot, index);
         pivot = index;

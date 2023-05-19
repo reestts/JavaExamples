@@ -1,4 +1,4 @@
-package com.reestts.sorting;
+package com.reestts.sorting.array;
 
 import static com.reestts.utils.CustomArrayUtils.outputArray;
 
@@ -14,9 +14,11 @@ public class InsertionSortArray {
 
             while (j >= 0 && array[j] > current) {
                 array[j + 1] = array[j];
-                --j;
+                j = j - 1;
             }
             array[j + 1] = current;
+            System.out.println();
+            outputArray(array);
         }
 
         System.out.println();
