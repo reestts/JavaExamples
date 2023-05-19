@@ -1,22 +1,16 @@
-package com.reestts.sorting;
+package com.reestts.sorting.list;
 
-import java.util.ArrayList;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+
+import static com.reestts.utils.CustomArrayUtils.createArrayList;
 
 @Slf4j
 public class InsertionSortList {
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(6);
-        list.add(8);
-        list.add(1);
-        list.add(3);
-        list.add(2);
-        list.add(9);
-        list.add(4);
-        log.info("List: {}", list);
+        List<Integer> list = createArrayList();
+        log.info("Source list: {}", list);
 
         for (int i = 1; i < list.size(); i++) {
             int current = list.get(i);
@@ -29,6 +23,6 @@ public class InsertionSortList {
             list.set(j + 1, current);
         }
 
-        log.info("List: {}", list);
+        log.info("Sorted list: {}", list);
     }
 }

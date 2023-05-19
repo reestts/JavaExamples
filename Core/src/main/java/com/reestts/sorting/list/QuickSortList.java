@@ -1,23 +1,17 @@
-package com.reestts.sorting;
+package com.reestts.sorting.list;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
+
+import static com.reestts.utils.CustomArrayUtils.createArrayList;
 
 @Slf4j
 public class QuickSortList {
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-        list.add(6);
-        list.add(8);
-        list.add(1);
-        list.add(3);
-        list.add(2);
-        list.add(9);
-        list.add(4);
-        log.info("List: {}", list);
+        List<Integer> list = createArrayList();
+        log.info("Source list: {}", list);
 
         List<Integer> sortedList = quickSort(list, 0, list.size());
 
