@@ -1,4 +1,4 @@
-package com.reestts.structures.heap;
+package com.reestts.datastructures.heap;
 
 public class MinHeap {
 

@@ -1,4 +1,4 @@
-package com.reestts.structures.stack;
+package com.reestts.datastructures.stack;
 
 public class Node {
 

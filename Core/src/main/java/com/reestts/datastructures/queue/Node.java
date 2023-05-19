@@ -1,4 +1,4 @@
-package com.reestts.structures.queue;
+package com.reestts.datastructures.queue;
 
 public class Node {
 

@@ -1,4 +1,4 @@
-package com.reestts.structures.linkedlist;
+package com.reestts.datastructures.linkedlist;
 
 public class Node {
 

@@ -1,4 +1,4 @@
-package com.reestts.structures.heap;
+package com.reestts.datastructures.heap;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;

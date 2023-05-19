@@ -1,4 +1,4 @@
-package com.reestts.structures.graph;
+package com.reestts.datastructures.graph;
 
 public class BreathFirstSearch {
 

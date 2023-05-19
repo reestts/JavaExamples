@@ -1,4 +1,4 @@
-package com.reestts.structures.hashtable;
+package com.reestts.datastructures.hashtable;
 
 public class HashTable {
 

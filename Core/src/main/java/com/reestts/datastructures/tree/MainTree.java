@@ -1,4 +1,4 @@
-package com.reestts.structures.tree;
+package com.reestts.datastructures.tree;
 
 public class MainTree {
 
