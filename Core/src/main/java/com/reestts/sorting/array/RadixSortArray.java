@@ -8,12 +8,10 @@ public class RadixSortArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{6, 8, 1, 3, 2, 9, 4};
-        outputArray(array);
-
+        outputArray(array, "Source array: ");
         radixSort(array, array.length);
-
         System.out.println();
-        outputArray(array);
+        outputArray(array, "Sorted array: ");
     }
 
     static void radixSort(int[] array, int length) {

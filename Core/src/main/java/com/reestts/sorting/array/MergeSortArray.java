@@ -6,12 +6,10 @@ public class MergeSortArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{6, 8, 1, 3, 2, 9, 4};
-        outputArray(array);
-
+        outputArray(array, "Source array: ");
         mergeSort(array, array.length);
-
         System.out.println();
-        outputArray(array);
+        outputArray(array, "Sorted array: ");
     }
 
     static void mergeSort(int[] sourceArray, int sourceArrayLength) {

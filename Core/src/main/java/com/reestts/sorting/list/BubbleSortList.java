@@ -12,7 +12,11 @@ public class BubbleSortList {
     public static void main(String[] args) {
         List<Integer> list = createArrayList();
         log.info("Source list: {}", list);
+        bubbleSort(list);
+        log.info("Sorted list: {}", list);
+    }
 
+    static void bubbleSort(List<Integer> list) {
         for (int j = 0; j < list.size(); j++) {
             boolean isSorted = true;
             for (int i = 1; i < list.size() - j; i++) {
@@ -25,7 +29,5 @@ public class BubbleSortList {
                 break;
             }
         }
-
-        log.info("Sorted list: {}", list);
     }
 }

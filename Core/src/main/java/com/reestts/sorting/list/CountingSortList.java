@@ -13,7 +13,11 @@ public class CountingSortList {
     public static void main(String[] args) {
         List<Integer> list = createArrayList();
         log.info("Source list: {}", list);
+        List<Integer> sortedList = countingSort(list);
+        log.info("Sorted list: {}", sortedList);
+    }
 
+    static List<Integer> countingSort(List<Integer> list) {
         int max = Collections.max(list);
         int min = Collections.min(list);
         int range = max - min + 1;
@@ -38,7 +42,6 @@ public class CountingSortList {
         for (int el : output) {
             sortedList.add(el);
         }
-
-        log.info("Sorted list: {}", sortedList);
+        return sortedList;
     }
 }

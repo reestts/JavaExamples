@@ -11,7 +11,11 @@ public class InsertionSortList {
     public static void main(String[] args) {
         List<Integer> list = createArrayList();
         log.info("Source list: {}", list);
+        insertionSort(list);
+        log.info("Sorted list: {}", list);
+    }
 
+    static void insertionSort(List<Integer> list) {
         for (int i = 1; i < list.size(); i++) {
             int current = list.get(i);
             int j = i - 1;
@@ -22,7 +26,5 @@ public class InsertionSortList {
             }
             list.set(j + 1, current);
         }
-
-        log.info("Sorted list: {}", list);
     }
 }

@@ -12,9 +12,7 @@ public class QuickSortList {
     public static void main(String[] args) {
         List<Integer> list = createArrayList();
         log.info("Source list: {}", list);
-
         List<Integer> sortedList = quickSort(list, 0, list.size());
-
         log.info("Sorted list: {}", sortedList);
     }
 

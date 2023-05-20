@@ -7,8 +7,13 @@ public class SelectionSortArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{6, 8, 1, 3, 2, 9, 4};
-        outputArray(array);
+        outputArray(array, "Source array: ");
+        selectionSort(array);
+        System.out.println();
+        outputArray(array, "Sorted array: ");
+    }
 
+    static void selectionSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int mixIndex = i;
             for (int j = i + 1; j < array.length; j++) {
@@ -17,8 +22,6 @@ public class SelectionSortArray {
                 }
             }
             swapElements(array, i, mixIndex);
-            System.out.println();
-            outputArray(array);
         }
     }
 }

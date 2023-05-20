@@ -8,8 +8,13 @@ public class CountingSortArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{6, 8, 1, 3, 2, 9, 4};
-        outputArray(array);
+        outputArray(array, "Source array: ");
+        var sortedArray = countingSort(array);
+        System.out.println();
+        outputArray(sortedArray, "Sorted array: ");
+    }
 
+    static int[] countingSort(int[] array) {
         int min = array[0];
         int max = array[0];
         for (int j : array) {
@@ -28,11 +33,8 @@ public class CountingSortArray {
             int index = i - min;
             tempArray[index] = i;
         }
-        int[] sortedArray = Arrays.stream(tempArray)
+        return Arrays.stream(tempArray)
                 .filter(value -> value != 0)
                 .toArray();
-
-        System.out.println();
-        outputArray(sortedArray);
     }
 }

@@ -13,9 +13,7 @@ public class RadixSortList {
     public static void main(String[] args) {
         List<Integer> list = createArrayList();
         log.info("Source list: {}", list);
-
         radixSort(list, list.size());
-
         log.info("Sorted list: {}", list);
     }
 

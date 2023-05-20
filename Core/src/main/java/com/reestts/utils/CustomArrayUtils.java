@@ -7,7 +7,8 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class CustomArrayUtils {
 
-    public static void outputArray(int[] array) {
+    public static void outputArray(int[] array, String intro) {
+        System.out.print(intro);
         for (int i = 0; i < array.length; i++) {
             if (i == array.length - 1) {
                 System.out.print(array[i]);

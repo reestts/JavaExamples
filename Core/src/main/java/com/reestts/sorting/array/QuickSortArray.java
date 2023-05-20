@@ -7,12 +7,10 @@ public class QuickSortArray {
 
     public static void main(String[] args) {
         int[] array = new int[]{6, 8, 1, 3, 2, 9, 4};
-        outputArray(array);
-
+        outputArray(array, "Source array: ");
         quickSort(array, 0, array.length);
-
         System.out.println();
-        outputArray(array);
+        outputArray(array, "Sorted array: ");
     }
 
     static void quickSort(int[] array, int index, int size) {
@@ -32,8 +30,6 @@ public class QuickSortArray {
                 index++;
                 swapElements(array, index, k);
             }
-            System.out.println();
-            outputArray(array);
         }
         swapElements(array, pivot, index);
         pivot = index;

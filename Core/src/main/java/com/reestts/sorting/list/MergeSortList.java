@@ -12,9 +12,7 @@ public class MergeSortList {
     public static void main(String[] args) {
         List<Integer> list = createArrayList();
         log.info("Source list: {}", list);
-
         List<Integer> sortedList = mergeSort(list);
-
         log.info("Sorted list: {}", sortedList);
     }
 
